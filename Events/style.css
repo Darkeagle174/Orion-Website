@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+
+body {
+    /* background-image: linear-gradient(0deg,#FF7E5F, #FEB47B, #FF767B, #C837AB) ; */
+    background-color: #3d007a ;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #040018;
+    border: 1px solid #fff;
+    font-family: 'Shadows Into Light Two';
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    z-index: 1;
+    height: 60px;
+}
+
+header ul {
+  display: flex;
+  gap: 90px;
+  /* padding: 15px; */
+  align-items: center;
+  margin: 0;
+  justify-content: space-around;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+header ul li:hover {
+    background: linear-gradient(45deg, #22d3ee, #18a2d9, #3b82f6, #4f46e5, #c026d3, #be123c);
+  /* Gradient background */
+  -webkit-background-clip: text;
+  /* Clip text to the background */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Hide original text color */
+  color: transparent;
+  /* Hide original text color */
+  cursor: pointer;
+}
+
+.heading {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+img {
+    width: 75%;
+    margin-top: 20px;
+    /* margin-left: 60px; */
+    margin-bottom: 20px;
+    height: 75%;
+    
+}
