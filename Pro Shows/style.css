@@ -1,79 +1,103 @@
-/* Ensure the entire body and html take up full height */
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #000; /* This should be black */
-    font-family: Arial, sans-serif;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  font-family: Arial, sans-serif;
+}
+
+.curtain-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.curtain-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.curtain {
+  position: absolute;
+  top: 0;
+  width: 16.6%;
+  height: 100%;
+  background: linear-gradient(90deg, #B22222, #8B0000);
+  animation: sway 10s infinite ease-in-out, opacity-change 8s infinite;
+  opacity: 0.8;
+}
+
+.curtain-left {
+  left: 0;
+}
+
+.curtain-right {
+  right: 0;
+  transform: rotateY(180deg);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+}
+
+h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+@keyframes sway {
+
+  0%,
+  100% {
+    transform: translateX(0);
   }
-  
-  /* Container for curtains and content */
-  .curtain-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+
+  25% {
+    transform: translateX(55px);
   }
-  
-  /* Each curtain layer */
-  .curtain-layer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+
+  50% {
+    transform: translateX(-55px);
   }
-  
-  /* Each curtain panel */
-  .curtain {
-    position: absolute;
-    top: 0;
-    width: 16.6%;
-    height: 100%;
-    background: linear-gradient(90deg, #B22222, #8B0000); /* Red gradient */
-    animation: sway 5s infinite ease-in-out;
+
+  75% {
+    transform: translateX(55px);
+  }
+}
+
+@keyframes opacity-change {
+
+  0%,
+  100% {
     opacity: 0.8;
   }
-  
-  .curtain-left {
-    left: 0;
+
+  50% {
+    opacity: 1;
   }
-  
-  .curtain-right {
-    right: 0;
-    transform: rotateY(180deg); /* Flip horizontally */
-  }
-  
-  /* Centered content */
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white; /* White text for visibility */
-    z-index: 10; /* Above the curtains */
-  }
-  
-  /* Styling for the heading */
-  h1 {
-    font-family: 'Rock Salt', cursive;
-    font-size: 3rem;
-    margin: 0;
-  }
-  
-  /* Styling for the paragraph */
-  p {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  
-  /* Keyframes for swaying animation */
-  @keyframes sway {
-    0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(10px); }
-  }
-  
+}
+
+#pro_show{
+  width: 80%;
+}
