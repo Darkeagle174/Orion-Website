@@ -19,8 +19,9 @@ header {
   border: 1px solid #fff;
   font-family: 'Shadows Into Light Two';
   color: #fff;
-  width: 90%;
+  width: 120%;
   margin: auto;
+  margin-left: -10%;
   display: flex;
   justify-content: center;
   border-radius: 10px;
@@ -100,6 +101,7 @@ cursor: pointer;
   text-align: center;
   color: white;
   z-index: 10;
+  height: 100vh;
 }
 
 h1 {
@@ -147,9 +149,9 @@ p {
 }
 
 #pro_show {
-  width: 150%;
+  width: 125%;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: -12.5%;
   height: 75%;
-  margin-left: -25%;
 }
