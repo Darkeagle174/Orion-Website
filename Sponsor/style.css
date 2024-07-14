@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 
 body {
-    background-image: linear-gradient(0deg,#FF7E5F, #FEB47B, #FF767B, #C837AB) ;
+    background: linear-gradient(135deg, #334d00, #669900, #99cc33, #ccff66, #e6ffb3);
     background-repeat: no-repeat;
     height: 100%;
 }

@@ -2,8 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
 
 body {
-    /* background-image: linear-gradient(0deg,#FF7E5F, #FEB47B, #FF767B, #C837AB) ; */
-    background-color: #3d007a ;
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at 20% 30%, #8a00d4, transparent 25%),
+                radial-gradient(circle at 70% 40%, #00c6ff, transparent 20%),
+                radial-gradient(circle at 30% 70%, #ff007f, transparent 30%),
+                linear-gradient(135deg, #000428, #1b2735);
+    background-blend-mode: screen;
+    /* background-color: #3d007a ; */
     background-repeat: no-repeat;
     height: 100%;
 }
