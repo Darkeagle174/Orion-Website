@@ -1,157 +1,75 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #000;
-  font-family: Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+
+body {
+    /* background-image: linear-gradient(0deg,#FF7E5F, #FEB47B, #FF767B, #C837AB) ; */
+    background-color: rgb(136, 190, 255);
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  background: #040018;
-  border: 1px solid #fff;
-  font-family: 'Shadows Into Light Two';
-  color: #fff;
-  width: 120%;
-  margin: auto;
-  margin-left: -10%;
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-  margin-top: 2rem;
-  z-index: 1;
-  height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background: #040018;
+    border: 1px solid #fff;
+    font-family: 'Shadows Into Light Two';
+    color: #fff;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    z-index: 1;
+    height: 60px;
 }
 
 header ul {
-display: flex;
-gap: 90px;
-/* padding: 15px; */
-align-items: center;
-margin: 0;
-justify-content: space-around;
+  display: flex;
+  gap: 90px;
+  /* padding: 15px; */
+  align-items: center;
+  margin: 0;
+  justify-content: space-around;
 }
 
 header ul li {
-  list-style: none;
+    list-style: none;
 }
 
 header ul li a {
-  list-style: none;
-  text-decoration: none;
-  color: white;
+    list-style: none;
+    text-decoration: none;
+    color: white;
 }
 
 header ul li:hover {
-  background: linear-gradient(45deg, #22d3ee, #18a2d9, #3b82f6, #4f46e5, #c026d3, #be123c);
-/* Gradient background */
--webkit-background-clip: text;
-/* Clip text to the background */
-background-clip: text;
--webkit-text-fill-color: transparent;
-/* Hide original text color */
-color: transparent;
-/* Hide original text color */
-cursor: pointer;
+    background: linear-gradient(45deg, #22d3ee, #18a2d9, #3b82f6, #4f46e5, #c026d3, #be123c);
+  /* Gradient background */
+  -webkit-background-clip: text;
+  /* Clip text to the background */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* Hide original text color */
+  color: transparent;
+  /* Hide original text color */
+  cursor: pointer;
 }
 
-.curtain-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+.heading {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* align-items: center; */
+    justify-content: center;
 }
 
-.curtain-layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.curtain {
-  position: absolute;
-  top: 0;
-  width: 16.6%;
-  height: 100%;
-  background: linear-gradient(90deg, #B22222, #8B0000);
-  animation: sway 10s infinite ease-in-out, opacity-change 8s infinite;
-  opacity: 0.8;
-}
-
-.curtain-left {
-  left: 0;
-}
-
-.curtain-right {
-  right: 0;
-  transform: rotateY(180deg);
-}
-
-.content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 10;
-  height: 100vh;
-}
-
-h1 {
-  font-family: 'Rock Salt', cursive;
-  font-size: 3rem;
-  margin: 0;
-}
-
-p {
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-@keyframes sway {
-
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(55px);
-  }
-
-  50% {
-    transform: translateX(-55px);
-  }
-
-  75% {
-    transform: translateX(55px);
-  }
-}
-
-@keyframes opacity-change {
-
-  0%,
-  100% {
-    opacity: 0.8;
-  }
-
-  50% {
-    opacity: 1;
-  }
-}
-
-#pro_show {
-  width: 125%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: -12.5%;
-  height: 75%;
+img {
+    width: 75%;
+    margin-top: 20px;
+    /* margin-left: 60px; */
+    margin-bottom: 20px;
+    height: 75%;
+    
 }
