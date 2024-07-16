@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+:root{
+    --primary-bg : #b13be8;
+    --primary-bg-active : #a001ea;
+    --primary-bg-hover : #c445ff;
+    --secondary-bg : #12cee2;
+    --primary-text : #ffffff;
+    --secondary-text : #000000;
+}
+
+main{
+    /* color: var(--primary-bg); */
+    padding: 10px;
+    display: flex;
+    margin-top: 30px;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(107, 106, 106);
+    border-radius: 15px;
+    /* overflow: hidden; */
+    padding: 10px;
+    box-shadow: -3px -3px 6px var(--secondary-text);
+}
+.card:hover{
+    box-shadow: 5px 5px 5px var(--secondary-text);
+}
+.card:active{
+    box-shadow: none;
+}
+.image img {
+    border-radius: 10px;
+    width: 375px;
+    height: 100%;
+    cursor: pointer;
+}
+.title {
+    padding-left: 5px;
+    padding-top: -5px;
+    color: var(--secondary-text);
+}
+.title .main-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.title .secondary-title{
+    cursor: pointer;
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    gap: 8px 10px;
+}
+.info .btn{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--primary-bg);
+    background-color: var(--primary-text);
+}
+.info .btn:hover{
+    border: 1px solid var(--primary-bg);
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+.register .btn{
+    cursor: pointer;
+    width: 100%;
+    margin-top:20px ;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 25px;
+    padding: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    border:none;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+.register .btn:hover{
+    background-color: var(--primary-bg-hover)
+}
+.register .btn:active{
+    background-color: var(--primary-bg-active);
+}
